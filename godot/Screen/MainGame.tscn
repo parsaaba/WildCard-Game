@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/background.png" type="Texture" id=1]
+[ext_resource path="res://Script/MainGame.gd" type="Script" id=2]
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="BackGround" type="Control" parent="."]
+margin_left = 5.0
+margin_right = 1022.0
+margin_bottom = 599.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="BackGround"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -510.5
+margin_top = -303.0
+margin_right = 510.5
+margin_bottom = 303.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="BackGround/Panel"]
+position = Vector2( 514, 302 )
+scale = Vector2( 1.06875, 1.005 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
